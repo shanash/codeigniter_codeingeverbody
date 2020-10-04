@@ -4,13 +4,13 @@
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <!-- Bootstrap -->
-                <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+                <link href="/CodeIgniterTest/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
                 <style>
                     body{
                         padding-top:60px;
                     }
                 </style>
-                <link href="/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">             
+                <link href="/CodeIgniterTest/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">             
             </head>
             <body>
                 <div class="navbar navbar-fixed-top">
