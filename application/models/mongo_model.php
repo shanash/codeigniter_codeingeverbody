@@ -15,7 +15,7 @@ class Mongo_model extends CI_Model {
     }
 
     public function get($id) {
-        $list = getData();
+        $list = $this->getData();
         if ($list.count <= $id) return null;
 
         return $list[$id];
