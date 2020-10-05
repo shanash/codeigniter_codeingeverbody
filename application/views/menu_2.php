@@ -6,7 +6,6 @@
                 $('input:radio[name="SendType"]').click(function()
                 {
                         SendType($(this).val());
-                })
                 });
                 function SendType($value)
                 {
