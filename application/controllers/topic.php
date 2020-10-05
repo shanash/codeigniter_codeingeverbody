@@ -17,7 +17,7 @@ class Topic extends CI_Controller {
         $this->load->view('head');
         $data['list'] = $this->mongo_model->getData();
         $this->load->view('topic_list', $data);
-        $topic = $this->topic_model->get($id);
+        $topic = $this->mongo_model->get($id);
         $this->load->view('get', $topic);
         $this->load->view('footer');
     }
