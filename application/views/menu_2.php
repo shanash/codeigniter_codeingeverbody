@@ -1,10 +1,14 @@
         <div class="span10">
                 <?php
                 if (isset($_POST['member_0']) || isset($_POST['member_1'])) {
-                        if (isset($_POST['member_0'])) { 
-                             echo "member_0 was selected"; //If this radio was selected
+                        if (isset($_POST['member_0'])) {
+                                print<<<_HTML_
+                                member_0 was selected
+                                _HTML_;
                         } elseif (isset($_POST['member_1'])) { 
-                             echo "member_1 was selected"; //If the other one was
+                                print<<<_HTML_
+                                member_1 was selected
+                                _HTML_;
                         }
                    }
                 ?>
