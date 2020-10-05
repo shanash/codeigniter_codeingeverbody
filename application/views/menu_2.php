@@ -3,7 +3,7 @@
                 $is_individual = false;
                 $(document).ready(function()
                 {
-                $("input:radio[name=SendType]").click(function()
+                $('input:radio[name="SendType"]').click(function()
                 {
                         SendType($(this).val());
                 })
