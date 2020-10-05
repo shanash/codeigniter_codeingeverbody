@@ -1,20 +1,16 @@
         <div class="span10">
                 <?php
-                $is_individual = false;
-                $(document).ready(function()
-                {
-                $('input:radio[name="SendType"]').click(function()
-                {
-                        SendType($(this).val());
-                });
-                function SendType($value)
-                {
-                        $is_individual = $value;
-                }
+                if (isset($_POST['member_0']) || isset($_POST['member_1'])) {
+                        if (isset($_POST['member_0'])) { 
+                             echo "member_0 was selected"; //If this radio was selected
+                        } elseif (isset($_POST['member_1'])) { 
+                             echo "member_1 was selected"; //If the other one was
+                        }
+                   }
                 ?>
                 아이템 지급<br>
-                <input type="radio" name="SendType" value="false">전체
-                <input type="radio" name="SendType" value="true">개별<br>
+                <input type="radio" name="SendType" value="false" id="member_0">전체
+                <input type="radio" name="SendType" value="true" id="member_1">개별<br>
                 <form method="post" action="$_SERVER[PHP_SELF]">
                         <?php
                         if ($is_individual == true)
