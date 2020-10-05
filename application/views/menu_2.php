@@ -8,17 +8,10 @@
                         }
                    }
                 ?>
+                <form method="post" action="$_SERVER[PHP_SELF]">
                 아이템 지급<br>
                 <input type="radio" name="SendType" value="false" id="member_0">전체
                 <input type="radio" name="SendType" value="true" id="member_1">개별<br>
-                <form method="post" action="$_SERVER[PHP_SELF]">
-                        <?php
-                        if ($is_individual == true)
-                        {
-                                print<<<_HTML_
-                                user ID: <input type="text" name="uuid"><br>
-                                _HTML_;
-                        }?>
                         message: <input type="text" name="message"><br>
                         date_deadline: <input type="text" name="date_deadline" value="0"><br>
                         <input type="radio" id="sr_armor_selector" name="item_id" value="600">
