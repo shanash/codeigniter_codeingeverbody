@@ -1,9 +1,29 @@
         <div class="span10">
+                <?php
+                $is_individual = false;
+                $(document).ready(function()
+                {
+                $("input:radio[name=SendType]").click(function()
+                {
+                        SendType($(this).val());
+                })
+                });
+                function SendType($value)
+                {
+                        $is_individual = $value;
+                }
+                ?>
                 아이템 지급<br>
-                <input type="radio" name="send_type" value="All">전체
-                <input type="radio" name="send_type" value="Individual">개별<br>
+                <input type="radio" name="SendType" value="false">전체
+                <input type="radio" name="SendType" value="true">개별<br>
                 <form method="post" action="$_SERVER[PHP_SELF]">
-                        user ID: <input type="text" name="uuid"><br>
+                        <?php
+                        if ($is_individual == true)
+                        {
+                                print<<<_HTML_
+                                user ID: <input type="text" name="uuid"><br>
+                                _HTML_;
+                        }?>
                         message: <input type="text" name="message"><br>
                         date_deadline: <input type="text" name="date_deadline" value="0"><br>
                         <input type="radio" id="sr_armor_selector" name="item_id" value="600">
