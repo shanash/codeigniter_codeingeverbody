@@ -1,8 +1,8 @@
-        <div class="content">
+        <div class="span10">
+                아이템 지급<br>
+                <input type="radio" name="send_type" value="All">전체
+                <input type="radio" name="send_type" value="Individual">개별<br>
                 <form method="post" action="$_SERVER[PHP_SELF]">
-                        아이템 지급<br>
-                        <input type="radio" name="send_type" value="All">전체
-                        <input type="radio" name="send_type" value="Individual">개별<br>
                         user ID: <input type="text" name="uuid"><br>
                         message: <input type="text" name="message"><br>
                         date_deadline: <input type="text" name="date_deadline" value="0"><br>

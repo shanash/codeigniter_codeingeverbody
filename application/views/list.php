@@ -1,4 +1,4 @@
-		<div class="sidebar">
+		<div class="span2">
 			<ul>
 				<li><a href="/CodeIgniterTest/index.php/topic/menu/0">점검</a></li>
 				<li><a href="/CodeIgniterTest/index.php/topic/menu/1">이벤트</a></li>
