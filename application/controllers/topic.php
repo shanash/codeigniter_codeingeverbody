@@ -8,16 +8,16 @@ class Topic extends CI_Controller {
     }
     public function index(){
         $this->load->view('head');
-        $data['list'] = $this->mongo_model->getData();
-        $this->load->view('topic_list', $data);
+        //$data['list'] = $this->mongo_model->getData();
+        $this->load->view('list');
         $this->load->view('main');
         $this->load->view('footer');
     }
-    public function get($id){
+    public function menu($id){
         $this->load->view('head');
-        $data['list'] = $this->mongo_model->getData();
-        $this->load->view('topic_list', $data);
-        $this->load->view('get', $data['list'][$id]);
+        //$data['list'] = $this->mongo_model->getData();
+        $this->load->view('list');
+        $this->load->view('menu_'. $id);
         $this->load->view('footer');
     }
 }
