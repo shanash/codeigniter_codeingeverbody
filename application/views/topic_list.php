@@ -1,4 +1,4 @@
-<ul>
+<ol>
 <?php
 foreach($list as $data){
 ?>
@@ -6,4 +6,4 @@ foreach($list as $data){
 <?php
 }
 ?>
-</ul>
+</ol>
