@@ -19,6 +19,7 @@ class Topic extends CI_Controller {
     }
     public function addItem(){
         $this->_head();
+        $this->load->view('add_item');
         $this->load->view('footer');
     }
     private function _head(){
