@@ -2,13 +2,9 @@
                 <?php
                 if (isset($_POST['member_0']) || isset($_POST['member_1'])) {
                         if (isset($_POST['member_0'])) {
-                                print<<<_HTML_
-                                member_0 was selected
-                                _HTML_;
+                                echo 'member_0 was selected';
                         } elseif (isset($_POST['member_1'])) { 
-                                print<<<_HTML_
-                                member_1 was selected
-                                _HTML_;
+                                echo 'member_1 was selected';
                         }
                    }
                 ?>
@@ -30,4 +26,5 @@
                         <label for="ur_treasure_selector">UR 보물 선택권</label><br>
                         <input type="submit" value="확인">
                 </form>
+                <a href="/CodeIgniterTest/index.php/topic/addItem" class="btn">확인</a>
         </div>
