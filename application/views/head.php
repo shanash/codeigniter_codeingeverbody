@@ -8,5 +8,27 @@
     <link herf="/CodeIgniterTest/static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
+    <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+    
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+    
+        <!-- Be sure to leave the brand out there if you want it shown -->
+        <a class="brand" href="#">70억 좀비</a>
+    
+        <!-- Everything you want hidden at 940px or less, place within here -->
+        <div class="nav-collapse collapse">
+            <!-- .nav, .navbar-search, .navbar-form, etc -->
+        </div>
+    
+        </div>
+    </div>
+    </div>
     <div class="container-fluid">
     <div class="row-fluid">
