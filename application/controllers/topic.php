@@ -7,18 +7,23 @@ class Topic extends CI_Controller {
         $this->load->helper('url');
     }
     public function index(){
-        $this->load->view('head');
         //$data['list'] = $this->mongo_model->getData();
-        $this->load->view('list');
+        $this->_head();
         $this->load->view('main');
         $this->load->view('footer');
     }
     public function menu($id){
-        $this->load->view('head');
-        //$data['list'] = $this->mongo_model->getData();
-        $this->load->view('list');
+        $this->_head();
         $this->load->view('menu_'. $id);
         $this->load->view('footer');
+    }
+    public function addItem(){
+        $this->_head();
+        $this->load->view('footer');
+    }
+    private function _head(){
+        $this->load->view('head');
+        $this->load->view('list');
     }
 }
 ?>
