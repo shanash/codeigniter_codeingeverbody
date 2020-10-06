@@ -8,10 +8,10 @@
                         }
                    }
                 ?>
-                <form method="post" action="$_SERVER[PHP_SELF]">
+                <form action="/CodeIgniterTest/index.php/topic/addItem" method="post">
                 아이템 지급<br>
-                <input type="radio" name="SendType" value="false" id="member_0">전체
-                <input type="radio" name="SendType" value="true" id="member_1">개별<br>
+                <input type="radio" name="sendtype" value="false" id="member_0">전체
+                <input type="radio" name="sendtype" value="true" id="member_1">개별<br>
                         message: <input type="text" name="message"><br>
                         date_deadline: <input type="text" name="date_deadline" value="0"><br>
                         <input type="radio" id="sr_armor_selector" name="item_id" value="600">
@@ -26,5 +26,4 @@
                         <label for="ur_treasure_selector">UR 보물 선택권</label><br>
                         <input type="submit" value="확인">
                 </form>
-                <a href="/CodeIgniterTest/index.php/topic/addItem" class="btn">확인</a>
         </div>
